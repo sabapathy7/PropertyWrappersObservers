@@ -22,10 +22,10 @@ struct StateView: View {
             .foregroundStyle(.foreground)
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
 
-        Text(colorToggle == .blue ? "Blue" : "Black")
+        Text(colorToggle == .blue ? "Blue" : "Red")
 
         Button() {
-            colorToggle = colorToggle == .black ? .blue : .black
+            colorToggle = colorToggle == .red ? .blue : .red
         } label: {
             Text("Tap")
         }
