@@ -10,7 +10,7 @@ import SwiftUI
 struct NumberBlockView: View {
     let stepperValue: Int
     var body: some View {
-        Image(systemName: "\(stepperValue).square")
+        Image(systemName: "\(stepperValue).circle")
             .font(.system(size: 100))
             .foregroundStyle(.blue)
             .padding()

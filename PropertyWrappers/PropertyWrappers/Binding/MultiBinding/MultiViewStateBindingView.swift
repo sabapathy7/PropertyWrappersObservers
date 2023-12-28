@@ -12,7 +12,6 @@ struct MultiViewStateBindingView: View {
     var body: some View {
         Text("Parent view Value = \(counterValue)")
             .font(.title)
-            .padding()
         NumberChooser(counterValue: $counterValue)
     }
 }

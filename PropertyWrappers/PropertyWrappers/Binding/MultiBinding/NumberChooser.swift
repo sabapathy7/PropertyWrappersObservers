@@ -10,10 +10,10 @@ import SwiftUI
 struct NumberChooser: View {
     @Binding var counterValue: Int
     var body: some View {
-        Text("With the value from Parent to achieve 2-way binding")
+        Text(Constants.multiBindingDesc)
             .font(.subheadline)
         ZStack {
-            RoundedRectangle(cornerSize: CGSize(width: 15, height: 15))
+            RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
                 .fill(Color.secondary.opacity(0.1))
                 .frame(width: 300)
             VStack {
@@ -29,7 +29,6 @@ struct NumberChooser: View {
         }
         .padding()
         .navigationTitle("Multi View Binding")
-
     }
 }
 
