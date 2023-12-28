@@ -14,9 +14,9 @@ struct AppStorageView: View {
             Color(preferMode ? .black : .white).ignoresSafeArea(edges: .all)
             VStack {
 
-                Text("@AppStorage with @Binding")
+                Text(Constants.appStorageTitle)
                     .font(.title)
-                Text("Used to access UserDefaults from multiple views in a view hierarchy")
+                Text(Constants.appStorageDesc)
                     .font(.subheadline)
 
                 Spacer()
@@ -27,7 +27,7 @@ struct AppStorageView: View {
 
                 Spacer()
 
-                Text("@AppStorage to persistently store dark mode")
+                Text(Constants.appStorageUseCase)
                     .foregroundStyle(preferMode ? .white : .black)
                     .font(.footnote)
             }
