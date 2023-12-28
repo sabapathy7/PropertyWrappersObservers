@@ -11,14 +11,14 @@ struct SceneStorageView: View {
     @SceneStorage("currentTime") var currentTime: Double?
     var body: some View {
         VStack {
-            Text("@SceneStorage")
+            Text(Constants.sceneStorageTitle)
                 .font(.title)
-            Text("Save data persistently for each scene")
+            Text(Constants.sceneStorageDesc)
                 .font(.subheadline)
             Spacer()
             Text("Tapped on \(dateString)")
             Spacer()
-            Text("Tap to see the time change. Time saved persistently")
+            Text(Constants.sceneStorageUseCase)
                 .font(.footnote)
         }
         .onTapGesture {
