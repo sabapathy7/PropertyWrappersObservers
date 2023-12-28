@@ -7,23 +7,25 @@
 
 import SwiftUI
 
-final class User: ObservableObject {
+final class UserDet: ObservableObject {
     @Published var firstName: String  = "Saba"
     @Published var lastName: String   = "Pathy"
     @Published var age: Int           = 33
     @Published var email: String      = "sabapathy7@medium.com"
-
 }
 
 struct StateObjectView: View {
-    @StateObject private var model = User()
+    @StateObject private var model = UserDet()
     var body: some View {
         VStack {
-            Text("@StateObject").font(.title)
-            Text("Share state objects to subviews").font(.subheadline)
+            Text(Constants.stateObjectTitle)
+                .font(.title)
+            Text(Constants.stateObjectDesc)
+                .font(.subheadline)
             Spacer()
-
-            Text("Single source of truth for Reference Types").font(.caption).bold()
+            Text(Constants.stateObjectUse)
+                .font(.caption)
+                .bold()
             ZStack {
                 RoundedRectangle(cornerRadius: 25.0)
                     .fill(.yellow)
@@ -38,9 +40,7 @@ struct StateObjectView: View {
                 .foregroundStyle(.black)
                 .padding()
             }
-            
             Spacer()
-
             VStack(alignment: .leading) {
                 TextField("First Name", text: $model.firstName)
                 TextField("Last Name", text: $model.lastName)
@@ -49,8 +49,7 @@ struct StateObjectView: View {
             }
             .bold()
             Spacer()
-
-            Text("Bottom TextFields are editable").font(.footnote)
+            Text(Constants.stateObjectUseCase).font(.footnote)
         }
         .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
