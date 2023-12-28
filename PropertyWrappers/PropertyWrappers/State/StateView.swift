@@ -10,8 +10,9 @@ import SwiftUI
 struct StateView: View {
     @State private var colorToggle: Color = .blue
     var body: some View {
-        Text("@State").font(.title)
-        Text("Single source of truth for value types")
+        Text(Constants.stateTitle)
+            .font(.title)
+        Text(Constants.stateDesc)
             .font(.subheadline)
 
         Spacer()
@@ -20,20 +21,18 @@ struct StateView: View {
             .fill(colorToggle)
             .frame(width: 100, height: 100)
             .foregroundStyle(.foreground)
-            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
+            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 20)))
 
-        Text(colorToggle == .blue ? "Blue" : "Red")
+        Text(colorToggle == .blue ? Constants.colorBlue : Constants.colorRed)
 
-        Button() {
+        Button {
             colorToggle = colorToggle == .red ? .blue : .red
         } label: {
             Text("Tap")
         }
         .padding()
-
         Spacer()
-        
-        Text("@State owns and can mutate the property")
+        Text(Constants.stateUseCase)
             .font(.footnote)
     }
 }
