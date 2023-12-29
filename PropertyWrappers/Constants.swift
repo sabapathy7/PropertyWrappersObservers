@@ -8,6 +8,9 @@
 import Foundation
 
 struct Constants {
+    static let productFile = "products.json"
+    static let usersFile = "users.json"
+
     static let colorRed = "Red"
     static let colorGreen = "Green"
     static let colorBlue = "Blue"
@@ -39,6 +42,7 @@ struct Constants {
                                      Bindable will observe the changes from ViewModel. @Published not required
                                     """
 
+    static let bindableUseCase = "ListView fields are editable."
     static let appStorageTitle = "@AppStorage with @Binding"
     static let appStorageDesc = "Used to access UserDefaults from multiple views in a view hierarchy"
     static let appStorageUseCase = "@AppStorage to persistently store dark mode"
@@ -46,4 +50,14 @@ struct Constants {
     static let sceneStorageDesc = "Save data persistently for each scene"
     static let sceneStorageUseCase = "Tap to see the time change. Time saved persistently"
 
+    static let editViewID = "ID:"
+    static let editViewName = "Name"
+    static let editViewEmail = "Email"
+    static let editViewDOB = "DOB"
+    static let editViewProfPic = "Profile Pic"
+
+    static let editViewTitle = "Title"
+    static let editViewDesc = "Description"
+    static let editViewBrand = "brand"
+    static let editViewImage = "Images"
 }
