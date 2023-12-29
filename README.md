@@ -2,7 +2,7 @@
 
 SwiftUI Project that explains each behaviour of Property Wrappers and newly introduced Observation Framework.
 
-Full Tutorial can be found here: 
+Full Tutorial can be found here: https://sabapathy7.medium.com/swift-properties-a-deep-dive-into-property-wrappers-vs-property-observers-0c6ecc908b11
 
 ## About The Project
 
