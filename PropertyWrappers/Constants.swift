@@ -42,7 +42,6 @@ struct Constants {
     static let appStorageTitle = "@AppStorage with @Binding"
     static let appStorageDesc = "Used to access UserDefaults from multiple views in a view hierarchy"
     static let appStorageUseCase = "@AppStorage to persistently store dark mode"
-    
     static let sceneStorageTitle = "@SceneStorage"
     static let sceneStorageDesc = "Save data persistently for each scene"
     static let sceneStorageUseCase = "Tap to see the time change. Time saved persistently"
