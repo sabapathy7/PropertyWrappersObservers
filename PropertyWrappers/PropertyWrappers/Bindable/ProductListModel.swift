@@ -11,6 +11,6 @@ import Observation
     var products: [Product] = []
 
     func refreshData() {
-        products = Bundle.main.decodeJSON(file: "products.json")
+        products = Bundle.main.decodeJSON(file: Constants.productFile)
     }
 }

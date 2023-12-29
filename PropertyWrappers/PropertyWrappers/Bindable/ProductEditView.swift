@@ -13,22 +13,20 @@ struct ProductEditView: View {
     var body: some View {
         Form(content: {
             HStack {
-                Text("ID:")
+                Text(Constants.editViewID)
                 Spacer()
                 Text("\(product.id)")
             }
-            TextField("Title", text: $product.title)
-            TextField("Description", text: $product.description, axis: .vertical)
+            TextField(Constants.editViewTitle, text: $product.title)
+            TextField(Constants.editViewDesc, text: $product.description, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(2, reservesSpace: true)
-            TextField("brand", text: $product.brand)
-            Section("Images") {
+            TextField(Constants.editViewBrand, text: $product.brand)
+            Section(Constants.editViewImage) {
                 ForEach(product.images, id: \.self) { image in
                     AsyncImage(url: URL(string: image)) { image in
-                        image.resizable()
-                            .frame(width: 100, height: 100)
-                            .aspectRatio(0.5, contentMode: .fit)
-                            .clipShape(Rectangle())
+                        image
+                            .imageModifier()
                     } placeholder: {
                         ProgressView()
                     }

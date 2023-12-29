@@ -33,7 +33,7 @@ struct ProductListView: View {
         .onChange(of: selectedProduct) { _, newValue in
             shouldShowInspector = newValue != nil
         }
-        Text("ListView fields are editable.")
+        Text(Constants.bindableUseCase)
             .font(.footnote)
     }
 }
