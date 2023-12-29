@@ -1,4 +1,4 @@
-# Property Wrappers vs Observers
+# Property Wrappers 
 
 SwiftUI Project that explains each behaviour of Property Wrappers and newly introduced Observation Framework.
 
