@@ -12,21 +12,19 @@ struct UserEditView: View {
     var body: some View {
         Form(content: {
             HStack {
-                Text("ID:")
+                Text(Constants.editViewID)
                 Spacer()
                 Text(user.userID)
             }
-            TextField("Name", text: $user.username)
-            TextField("Email", text: $user.email, axis: .vertical)
+            TextField(Constants.editViewName, text: $user.username)
+            TextField(Constants.editViewEmail, text: $user.email, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(2, reservesSpace: true)
-            TextField("DOB", text: $user.birthDate)
-            Section("Profile Pic") {
+            TextField(Constants.editViewDOB, text: $user.birthDate)
+            Section(Constants.editViewProfPic) {
                 AsyncImage(url: URL(string: user.image)) { image in
-                    image.resizable()
-                        .frame(width: 100, height: 100)
-                        .aspectRatio(0.5, contentMode: .fit)
-                        .clipShape(Rectangle())
+                    image
+                        .imageModifier()
                 } placeholder: {
                     ProgressView()
                 }

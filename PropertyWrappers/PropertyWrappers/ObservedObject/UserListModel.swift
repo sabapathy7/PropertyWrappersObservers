@@ -10,6 +10,6 @@ import Foundation
 final class UserListModel: ObservableObject {
     @Published var users: [User] = []
     func refreshUsers() {
-        users = Bundle.main.decodeJSON(file: "users.json")
+        users = Bundle.main.decodeJSON(file: Constants.usersFile)
     }
 }
