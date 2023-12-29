@@ -36,7 +36,7 @@ struct UserListView: View {
         .onChange(of: selectedUser) { _, newValue in
             shouldShowInspector = newValue != nil
         }
-        Text("ListView fields are editable.")
+        Text(Constants.bindableUse)
             .font(.footnote)
     }
 }
