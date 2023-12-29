@@ -25,3 +25,13 @@ extension View {
        modifier(CustomEnvChildView(foregroundColor: foregroundColor, backgroundColor: backgroundColor))
     }
 }
+
+extension Image {
+    func imageModifier() -> some View {
+        self
+            .resizable()
+            .frame(width: 100, height: 100)
+            .aspectRatio(0.5, contentMode: .fit)
+            .clipShape(Rectangle())
+    }
+}
