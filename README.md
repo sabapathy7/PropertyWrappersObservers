@@ -16,7 +16,7 @@ Full Tutorial can be found here: https://sabapathy7.medium.com/swift-properties-
 <img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/d334affb-c3fb-4988-95f4-70f376805826" height = 550> 
 <img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/e0f469e5-fbe3-4e5c-b875-d8e48ceb7409" height = 550> 
 <img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/041a73d8-a019-4748-898d-3633bbbdb1ef" height = 550> 
-<img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/81be6680-04c6-4d89-83b6-f8650ae417b8" height = 550> 
-<img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/759f0af2-0db8-4ea3-bc5c-8fe025c7b912" height = 550> 
+<img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/382b82cd-68b5-4341-9e77-eb2980867bf8" height = 550> 
+<img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/3c00b42c-7b6a-445d-9bf9-12d6e4705e48" height = 550> 
 <img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/f9a13bba-c305-4a3e-a88d-12fa2839aacc" height = 550> 
 <img src= "https://github.com/sabapathyk7/PropertyWrappersObservers/assets/40764138/9945e48c-437c-4d50-913b-c41f9d551bee" height = 550> 
