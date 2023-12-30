@@ -28,7 +28,7 @@ struct NumberChooser: View {
 
         }
         .padding()
-        .navigationTitle("Multi View Binding")
+        .navigationTitle(Constants.multiViewBinding)
     }
 }
 

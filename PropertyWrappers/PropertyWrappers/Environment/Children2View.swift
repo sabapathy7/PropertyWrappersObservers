@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Children2View: View {
     var body: some View {
-        Text("Child View 2")
+        Text(Constants.childView2)
             .highlighterView(foregroundColor: .white, backgroundColor: .green)
     }
 }

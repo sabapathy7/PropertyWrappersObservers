@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SceneStorageView: View {
-    @SceneStorage("currentTime") var currentTime: Double?
+    @SceneStorage(Constants.currentTime) var currentTime: Double?
     var body: some View {
         VStack {
             Text(Constants.sceneStorageTitle)
@@ -29,7 +29,7 @@ struct SceneStorageView: View {
         if let currentTimeStamp = currentTime {
             return Date(timeIntervalSince1970: currentTimeStamp).formatted()
         } else {
-            return "Never"
+            return Constants.never
         }
     }
 }

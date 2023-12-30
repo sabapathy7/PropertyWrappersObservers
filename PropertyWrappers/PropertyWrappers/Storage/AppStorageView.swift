@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppStorageView: View {
-    @AppStorage("preferDark") var preferMode: Bool = false
+    @AppStorage(Constants.preferMode) var preferMode: Bool = false
     var body: some View {
         ZStack {
             Color(preferMode ? .black : .white).ignoresSafeArea(edges: .all)
@@ -64,7 +64,7 @@ struct SetView: View {
     var body: some View {
         HStack {
             Toggle(isOn: $preferMode, label: {
-                Text("Dark Mode")
+                Text(Constants.darkMode)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             })
             .frame(maxWidth: 150, alignment: .center)

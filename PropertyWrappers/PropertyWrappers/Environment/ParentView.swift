@@ -10,7 +10,7 @@ import SwiftUI
 struct ParentView: View {
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        Text("Parent View")
+        Text(Constants.parentView)
             .font(.title)
             .foregroundStyle(.brown)
             .bold()

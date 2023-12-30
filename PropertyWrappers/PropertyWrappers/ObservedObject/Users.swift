@@ -71,6 +71,6 @@ struct Hair: Codable {
 typealias Users = [User]
 
 extension User {
-    static let allUser: [User] = Bundle.main.decodeJSON(file: "users.json")
+    static let allUser: [User] = Bundle.main.decodeJSON(file: Constants.usersFile)
     static let dummyUser: User = allUser[0]
 }

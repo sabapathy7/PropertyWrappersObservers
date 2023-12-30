@@ -10,9 +10,12 @@ import SwiftUI
 struct NestedViews: View {
     var body: some View {
         VStack {
-            Text("@Environment")
+            Text(Constants.environment)
                 .font(.title)
                 .bold()
+            Text(Constants.environmnetDesc)
+                .font(.caption)
+            Spacer()
             ParentView()
                 .environment(\.colorScheme, .dark)
                 .padding()
@@ -20,6 +23,7 @@ struct NestedViews: View {
             ParentView()
                 .environment(\.colorScheme, .light)
                 .padding()
+            Spacer()
         }
     }
 }

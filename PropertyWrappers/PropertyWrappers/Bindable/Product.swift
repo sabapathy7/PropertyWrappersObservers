@@ -58,28 +58,6 @@ import Observation
 }
 
 extension Product {
-    static let allProduct: [Product] = Bundle.main.decodeJSON(file: "products.json")
+    static let allProduct: [Product] = Bundle.main.decodeJSON(file: Constants.productFile)
     static let dummyProduct: Product = allProduct[0]
-}
-
-extension Bundle {
-    func decodeJSON<T: Decodable>(file: String) -> T {
-        let data: Data
-        var decodedData: T
-        guard let file = Bundle.main.url(forResource: file, withExtension: nil) else {
-            fatalError("Couldn't find \(file) in main bundle.")
-        }
-        do {
-            data = try Data(contentsOf: file)
-        } catch {
-            fatalError("Couldn't load \(file) from main bundle:\n\(error)")
-        }
-        do {
-            let decoder = JSONDecoder()
-            decodedData = try decoder.decode(T.self, from: data)
-            return decodedData
-        } catch {
-            fatalError("Couldn't parse \(file) as \(T.self):\n\(error)")
-        }
-    }
 }

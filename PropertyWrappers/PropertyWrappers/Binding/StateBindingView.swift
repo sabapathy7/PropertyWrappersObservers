@@ -41,7 +41,7 @@ struct StateBindingSubView: View {
             Button {
                 colorToggle = colorToggle == .red ? .green : .red
             } label: {
-                Text("Tap")
+                Text(Constants.tap)
             }
         }
     }

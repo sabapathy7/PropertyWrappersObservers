@@ -40,14 +40,14 @@ struct WrapperLink: Identifiable {
 
 extension WrapperLink {
     static var wrapperLinks = [
-        WrapperLink(id: 1, title: "State"),
-        WrapperLink(id: 2, title: "Binding"),
-        WrapperLink(id: 3, title: "Multi-View Binding"),
-        WrapperLink(id: 4, title: "StateObject"),
-        WrapperLink(id: 5, title: "ObservedObject"),
-        WrapperLink(id: 6, title: "Environment"),
-        WrapperLink(id: 7, title: "Observable-Bindable"),
-        WrapperLink(id: 8, title: "AppStorage"),
-        WrapperLink(id: 9, title: "SceneStorage")
+        WrapperLink(id: 1, title: Constants.wrapperLinkState         ),
+        WrapperLink(id: 2, title: Constants.wrapperLinkBinding       ),
+        WrapperLink(id: 3, title: Constants.wrapperLinkMultiBinding  ),
+        WrapperLink(id: 4, title: Constants.wrapperLinkStateObject   ),
+        WrapperLink(id: 5, title: Constants.wrapperLinkObservedObject),
+        WrapperLink(id: 6, title: Constants.wrapperLinkEnvironment   ),
+        WrapperLink(id: 7, title: Constants.wrapperLinkBindable      ),
+        WrapperLink(id: 8, title: Constants.wrapperLinkAppStorage    ),
+        WrapperLink(id: 9, title: Constants.wrapperLinkSceneStorage  )
     ]
 }

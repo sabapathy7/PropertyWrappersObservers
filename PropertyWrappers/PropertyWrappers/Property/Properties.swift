@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct Properties: View {
-    let stored = "Stored Property"
+    let stored = Constants.storedProp
     var body: some View {
         Text(stored)
             .font(.title)
             .padding()
-            .navigationTitle("Properties")
+            .navigationTitle(Constants.properties)
     }
 }
 

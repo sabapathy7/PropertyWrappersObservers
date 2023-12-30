@@ -28,7 +28,7 @@ struct StateView: View {
         Button {
             colorToggle = colorToggle == .red ? .blue : .red
         } label: {
-            Text("Tap")
+            Text(Constants.tap)
         }
         .padding()
         Spacer()

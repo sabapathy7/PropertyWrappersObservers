@@ -29,7 +29,7 @@ struct UserListView: View {
                 UserEditView(user: selectedUser)
             }
         }
-        .navigationTitle("Product")
+        .navigationTitle(Constants.product)
         .onAppear {
             userList.refreshUsers()
         }

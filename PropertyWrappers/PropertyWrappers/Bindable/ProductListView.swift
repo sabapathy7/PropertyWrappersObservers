@@ -26,7 +26,7 @@ struct ProductListView: View {
                 ProductEditView(product: selectedProduct)
             }
         }
-        .navigationTitle("Product")
+        .navigationTitle(Constants.bindableProduct)
         .onAppear {
             productList.refreshData()
         }
