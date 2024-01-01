@@ -1,6 +1,6 @@
 # SwiftUI Property Wrappers Demo Project
 
-Welcome to the SwiftUI Property Wrappers and Observers Demo! This project serves as a comprehensive guide to understanding and utilizing various Property Wrappers and the newly introduced Observation Framework in Swift, especially within the context of SwiftUI.
+Welcome to the SwiftUI Property Wrappers Demo! This project serves as a comprehensive guide to understanding and utilizing various Property Wrappers and the newly introduced Observation Framework in Swift, especially within the context of SwiftUI.
 
 The full Tutorial can be found here: https://sabapathy7.medium.com/swift-properties-a-deep-dive-into-property-wrappers-vs-property-observers-0c6ecc908b11
 
