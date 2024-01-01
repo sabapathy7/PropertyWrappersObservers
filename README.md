@@ -1,12 +1,33 @@
-# Property Wrappers 
+# SwiftUI Property Wrappers Demo Project
 
-SwiftUI Project that explains each behaviour of Property Wrappers and newly introduced Observation Framework.
+Welcome to the SwiftUI Property Wrappers and Observers Demo! This project serves as a comprehensive guide to understanding and utilizing various Property Wrappers and the newly introduced Observation Framework in Swift, especially within the context of SwiftUI.
 
-Full Tutorial can be found here: https://sabapathy7.medium.com/swift-properties-a-deep-dive-into-property-wrappers-vs-property-observers-0c6ecc908b11
+The full Tutorial can be found here: https://sabapathy7.medium.com/swift-properties-a-deep-dive-into-property-wrappers-vs-property-observers-0c6ecc908b11
 
-## About The Project
+## Overview
 
-   This demo project utilizes most used Property Wrappers and demostrated with some examples
+SwiftUI provides a powerful set of Property Wrappers that allow developers to manage and observe state changes in their applications easily. This demo project explores the following Property Wrappers and Observers:
+
+- **State:** Manages simple values that can be modified and trigger UI updates.
+- **Binding:** Represents a two-way connection between a view and its underlying model.
+- **StateObject:** A property wrapper for managing the lifecycle of complex model objects.
+- **ObservedObject:** Used to watch changes in the properties of an external object.
+- **ObservableObject:** A protocol for creating objects that a view can observe.
+- **Environment:** Allows sharing values across the entire SwiftUI view hierarchy.
+- **AppStorage:** Persists simple data types across app launches using UserDefaults.
+- **SceneStorage:** Persists data specific to a single scene in a multi-scene app.
+- **Bindable:** A property wrapper that creates a mutable reference to a value.
+- **Multi-View Binding:** A custom property wrapper demonstrating multi-view data binding.
+
+## Demo Project
+
+This repository includes a SwiftUI demo project that illustrates the usage of each Property Wrapper and Observer mentioned above. The project is organized into sections corresponding to each Property Wrapper, providing clear examples and explanations.
+
+## Contributions
+
+Contributions to this demo project are welcome! If you have ideas for improvements, or additional examples, or want to fix a bug, please open an issue or submit a pull request.
+
+Happy coding!
    
 ## Screenshots
 
